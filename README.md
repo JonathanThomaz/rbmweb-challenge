@@ -1,8 +1,34 @@
-# Getting Started with Create React App
+# RBM WEB Challenge
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## IDE
+
+VSCode is recommended.
+
+## VSCode extensions
+
+### EditorConfig for VS Code
+
+[VS Marketplace Link](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+
+- Id: EditorConfig.EditorConfig
+- Description: EditorConfig Support for Visual Studio Code
+- Version: 0.16.4
+- Publisher: EditorConfig
+
+### ESLint
+
+[VS Marketplace Link](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+- Id: dbaeumer.vscode-eslint
+- Description: Integrates ESLint JavaScript into VS Code.
+- Version: 2.2.2
+- Publisher: Microsoft
+
 ## Available Scripts
+
+All scripts can be use with yarn.
 
 In the project directory, you can run:
 
@@ -13,6 +39,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+### `npm run lint`
+
+Use to verify if there are no problemns in your code. You can use also `npm run lint:fix`
 
 ### `npm test`
 
