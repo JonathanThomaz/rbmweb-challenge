@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Informações gerais do projeto
+
+Para manter os usuários cadastrados na função de mock de signup os dados são salvos no localstorage
+
+Para realizar o sign in é feita uma varredura no array buscando uma correspondência de cpf e senha.
+Após isso é salvo o usuário todo no localstorage como usuário atual, de acordo com a lgpd não poderia ser feito isso, mas como esse não é o foco essa foi a opção, no caso poderiamos salvar um token para manter a funcionalidade de que se já houver um usuário atual o sistema faça o sign in automáticamente.
+
+Melhoras para o projeto: 
+  - Adicionar mascaras aos inputs para auxiliar o usuário e melhorar a UX.
+  - Melhorar a funcionalidade de sign in caso já exista um usuário atual.
+  - Criar uma função para apagar o seu usuário.
+
 ## IDE
 
 VSCode is recommended.
@@ -74,3 +86,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+This project use MUI, to learn more access [Material UI](https://mui.com/pt/material-ui/getting-started/learn/)
