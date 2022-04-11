@@ -5,7 +5,7 @@ import { Loading } from 'componets/Loading/loading.component';
 
 const SignInPage = React.lazy(() => import(/* webpackChunkName: "home", webpackPrefech: true */ 'pages/auth/signin'));
 const SignUnPage = React.lazy(() => import(/* webpackChunkName: "home", webpackPrefech: true */ 'pages/auth/signup'));
-const HomePage = React.lazy(() => import(/* webpackChunkName: "home", webpackPrefech: true */ 'pages/auth/app/home'));
+const HomePage = React.lazy(() => import(/* webpackChunkName: "home", webpackPrefech: true */ 'pages/app/home'));
 
 const MyRoutes = () => (
   <Suspense fallback={<Loading />}>
