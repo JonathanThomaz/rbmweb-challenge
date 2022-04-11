@@ -1,17 +1,28 @@
 import React, { useCallback } from 'react';
-import { Button, Grid, TextField, Typography } from '@mui/material';
+import { Box, Button, Grid, TextField, Typography } from '@mui/material';
 import { Form, Field } from 'react-final-form';
 import { composeValidators, isRequired, isValidEmail } from 'validators';
+import { postSignUp } from 'redux/auth/auth.actions';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 const SignUpPage = () => {
+  const dispatcher = useDispatch();
+  const navigate = useNavigate();
+
   const submitForm = useCallback((values) => {
     const onSubmit = () => {
-      console.log(values);
+      dispatcher(postSignUp(values));
     };
     onSubmit();
   }, []);
   return (
     <Grid container justifyContent="center" alignItems="center" marginTop={2}>
+      <Grid item xs={12}>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', padding: '0 2rem' }}>
+          <Button onClick={() => navigate('/signin')}> Entrar</Button>
+        </Box>
+      </Grid>
       <Grid item xs={12} sx={{ textAlign: 'center' }}>
         <Typography>Faça seu cadastro agora:</Typography>
       </Grid>
